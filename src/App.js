@@ -14,6 +14,7 @@ import './App.css';
 import song from './img/bk.mp3';
 
 class App extends Component {
+
   playsond = () => {
     var x = document.getElementById("myAudio"); 
     x.play(); 
@@ -29,14 +30,18 @@ class App extends Component {
         <Route path="/"  exact component={MainPage}/> 
         <Route path="/troll"  exact component={Troll}/> 
         <Route path="/wow" component={Happy} />
-        <Route path="/happybirthdayG/hi" component={Hi} />
-        <Route path="/happybirthdayG/specialDay" component={SpecialDay} />
-        <Route path="/happybirthdayG/wish" component={Wish} />
+        <Route path="/hi" component={Hi} />
+        <Route path="/specialDay" component={SpecialDay} />
+        <Route path="/wish" component={Wish} />
       </Switch>
     );
 
+
+
     return (
       <div className="App">
+
+        <button onClick={this.playsond} >click</button>
   
         <audio id="myAudio" autoplay loop >
         <source src={song} type="audio/mpeg" >
