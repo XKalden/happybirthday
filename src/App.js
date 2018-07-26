@@ -26,9 +26,9 @@ class App extends Component {
   render() {
     let routes = (
       <Switch>
-        <Route path="/happybirthdayG"  exact component={MainPage}/> 
-        <Route path="/happybirthdayG/troll"  exact component={Troll}/> 
-        <Route path="/happybirthdayG/wow" component={Happy} />
+        <Route path="/"  exact component={MainPage}/> 
+        <Route path="/troll"  exact component={Troll}/> 
+        <Route path="/wow" component={Happy} />
         <Route path="/happybirthdayG/hi" component={Hi} />
         <Route path="/happybirthdayG/specialDay" component={SpecialDay} />
         <Route path="/happybirthdayG/wish" component={Wish} />
