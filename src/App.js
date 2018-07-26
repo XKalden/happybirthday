@@ -28,7 +28,7 @@ class App extends Component {
       <Switch>
         <Route path="/"  exact component={MainPage}/> 
         <Route path="/troll"  exact component={Troll}/> 
-        <Route path="/happyBirthday" component={Happy} />
+        <Route path="/wow" component={Happy} />
         <Route path="/hi" component={Hi} />
         <Route path="/specialDay" component={SpecialDay} />
         <Route path="/wish" component={Wish} />

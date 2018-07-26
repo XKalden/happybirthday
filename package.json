@@ -2,7 +2,7 @@
   "name": "birthday",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://xkalden.github.io/happybirthday/",
+  "homepage": "https://xkalden.github.io/happybirthday",
   "dependencies": {
     "gh-pages": "^1.2.0",
     "react": "^16.4.1",
