@@ -8,10 +8,13 @@
     left: 0; 
     top: 0;
     background-color: black;
-    opacity: .7;
-    z-index: 1;
+    z-index: 0;
 
     animation: bright 1.5s ease-out .4s;
+
+    opacity: .55;
+    overflow: hidden;
+
 }
 
 
@@ -136,20 +139,21 @@ a.btn{
 
 .animation-right2{
     margin-top: 10px;
-    animation: moveFromRight 1.6s ease-out 7s;
+    animation: moveFromRight 1.6s ease-out 9s;
     animation-fill-mode: backwards;
+
 }
 
 
 .animation-right3{
     margin-top: 30px;
-    animation: moveFromRight 1.6s ease-out 9s;
+    animation: moveFromRight 1.6s ease-out 11s;
     animation-fill-mode: backwards;
 }
 
 .animation-right4{
-    margin-top: 50%;
-    animation: moveFromRight 2s ease-out 15s;
+    margin-top: 45%;
+    animation: moveFromRight 2s ease-out 17s;
     animation-fill-mode: backwards;
 }
 
@@ -196,12 +200,13 @@ a.btn{
 }
 
 .main-container2{
-    background-color: black;
+    color: white;
     height: 200px;
     padding-top: 7%;
     width: 900px;
     margin: 0 auto;
-
+    z-index: -2;
+    opacity: 1;
 }
 
 .title{
@@ -212,8 +217,6 @@ a.btn{
 }
 
 
-
-
 .title2{
     color: white;
     font-size: 40px;
@@ -221,7 +224,7 @@ a.btn{
     text-align:center;
 
     opacity: 1;
-    z-index: 100;
+    z-index: -2;
 }
 
 

@@ -18,21 +18,15 @@ class Wish extends Component {
 
     render() {
 
-
-      
-
         let magic = (
             <div className="main2">
-            
-
+        
             <div className="main-container2">   
                 <h1 className="title2 animation-right2">Happy Bithday Silly!</h1>
                 <h1 className="title2 animation-right3">Have an Awesome Day!</h1>
-                <h1 className="title2 animation-right4">Still your Fan <span>😉</span></h1>
-
-
-
-                <video id="background-video"  loop autoPlay >
+                <h1 className="title2 animation-right4">Still Your Fan <span>😉</span></h1>
+                
+                <video id="background-video"  loop autoPlay>
                     <source src={videoo} type="video/mp4" />
                     <source src={videoo} type="video/ogg" />
                     Your browser does not support the video tag.

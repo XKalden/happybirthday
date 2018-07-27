@@ -13,6 +13,9 @@ import Hi from './components/message/hi';
 import SpecialDay from './components/message/speicalDay';
 import Wish from './components/message/wish';
 import Celebrate from './components/message/celebrate';
+import Enjoy from './components/message/enjoy';
+import Laugh from './components/message/laugh';
+import Smile from './components/message/smile';
 
 
 import './App.css';
@@ -43,16 +46,6 @@ class App extends Component {
 
   }
 
-  // componentDidMount = () => {
-  //  console.log('didmount')
-
-  // }
-  // componentWillUnmount = () => {
-  //   console.log('un mount')
-  // }
-
-
-  
 
   render() {
 
@@ -78,11 +71,14 @@ class App extends Component {
       <Switch>
         <Route path="/main" exact component={MainPage}/> 
         <Route path="/troll"  exact component={Troll}/> 
-        <Route path="/wow" component={Happy} />
-        <Route path="/hi" component={Hi} />
-        <Route path="/specialDay" component={SpecialDay} />
-        <Route path="/celebrate" component={Celebrate} />
-        <Route path="/wish" component={Wish} />
+        <Route path="/wow" exact component={Happy} />
+        <Route path="/hi" exact component={Hi} />
+        <Route path="/specialDay" exact component={SpecialDay} />
+        <Route path="/celebrate" exact component={Celebrate} />
+        <Route path="/wish" exact component={Wish} />
+        <Route path="/smile"  exact component={Smile}/> 
+        <Route path="/laugh"  exact component={Laugh}/> 
+        <Route path="/enjoy"  exact component={Enjoy}/> 
       </Switch>
     );
 
