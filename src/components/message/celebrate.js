@@ -5,16 +5,16 @@ import {Link} from 'react-router-dom';
 
 
 
-class Special extends Component {
+class Celebrate extends Component {
 
     render() {
         let magic = (
             <div className="main">
             <div className="main-container">   
-                <h1 className="title animation-right">Your Special Day </h1>
+                <h1 className="title animation-right">So celebrate every moment</h1>
                 <div className="flex">
                     <div className="flex1">
-                    <Link to="/celebrate" className="btn btn--white animation">Next <span>😎</span></Link>
+                    <Link to="/wish" className="btn btn--white animation">Next <span>😜</span></Link>
                     </div>
                     <div className="flex2">
                         <img className="animation-long" src={Rikkapoint} alt="rikka"/>
@@ -28,5 +28,5 @@ class Special extends Component {
     }
 }
 
-export default Special;
+export default Celebrate;
 

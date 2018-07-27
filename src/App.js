@@ -7,48 +7,70 @@ import Happy  from './components/happy/happy';
 import Hi from './components/message/hi';
 import SpecialDay from './components/message/speicalDay';
 import Wish from './components/message/wish';
+import Celebrate from './components/message/celebrate';
+
 
 import './App.css';
 
 
 import song from './img/bk.mp3';
 
+
+
+
 class App extends Component {
 
   playsond = () => {
-    var x = document.getElementById("myAudio"); 
-    x.play(); 
+    let x = document.getElementById("myAudio"); 
+    // x.play(); 
   }
 
-  componentDidMount(){
-    this.playsond();
+  // componentDidMount = () => {
+  //  console.log('didmount')
+
+  // }
+  // componentWillUnmount = () => {
+  //   console.log('un mount')
+  // }
+
+  messageAlert = () => {
+  
   }
+  
 
   render() {
+    
     let routes = (
       <Switch>
-        <Route path="/"  exact component={MainPage}/> 
+        <Route path="/" exact component={MainPage}/> 
         <Route path="/troll"  exact component={Troll}/> 
         <Route path="/wow" component={Happy} />
         <Route path="/hi" component={Hi} />
         <Route path="/specialDay" component={SpecialDay} />
+        <Route path="/celebrate" component={Celebrate} />
         <Route path="/wish" component={Wish} />
+
       </Switch>
     );
 
 
-
+    
     return (
       <div className="App">
 
-        <button onClick={this.playsond} >click</button>
-  
-        <audio id="myAudio" autoplay loop >
+        <audio id="myAudio"  autoPlay="autoplay" loop >
         <source src={song} type="audio/mpeg" >
         </source>
         </audio>
+
+        {this.messageAlert()}
+
+      
+  
      
         {routes}
+
+    
       </div>
     );
   }
