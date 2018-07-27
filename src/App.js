@@ -86,7 +86,7 @@ class App extends Component {
     return (
 
       <div className="App main"> 
-        <audio id="myAudio" loop >
+        <audio id="myAudio">
         <source src={song} type="audio/mpeg" >
         </source>
         </audio>

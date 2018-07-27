@@ -139,7 +139,7 @@ a.btn{
 
 .animation-right2{
     margin-top: 10px;
-    animation: moveFromRight 1.6s ease-out 9s;
+    animation: moveFromRight 1.6s ease-out 11s;
     animation-fill-mode: backwards;
 
 }
@@ -147,13 +147,13 @@ a.btn{
 
 .animation-right3{
     margin-top: 30px;
-    animation: moveFromRight 1.6s ease-out 11s;
+    animation: moveFromRight 1.6s ease-out 13s;
     animation-fill-mode: backwards;
 }
 
 .animation-right4{
     margin-top: 45%;
-    animation: moveFromRight 2s ease-out 17s;
+    animation: moveFromRight 2s ease-out 22s;
     animation-fill-mode: backwards;
 }
 

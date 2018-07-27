@@ -119,15 +119,12 @@
 
 .flex{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    
+    grid-template-columns: 1fr 1fr;   
 }
 
 .flex1{
     padding-top: 50%;
     text-align: center;
-      
 }
 
 .flex2{
